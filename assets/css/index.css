@@ -1,0 +1,74 @@
+
+.navcolor{
+    background-color: rgb(114, 30, 15);
+   
+}
+nav{
+    border-bottom: 4px solid rgb(168, 166, 30) !important ;
+}
+.text{
+    color:rgb(211, 26, 26) !important;;
+    font-size: 30px !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.icon{
+    color: rgb(177, 177, 37) !important;
+    font-size: 40px;
+    /* margin:  0 100px ; */
+}
+.text:hover{
+     color:white !important;
+     transition: color 0.3s ease-in 0.2s;
+     -webkit-transition: color 0.3s ease-in 0.2s;
+     -moz-transition: color 0.3s ease-in 0.2s;
+     -ms-transition: color 0.3s ease-in 0.2s;
+     -o-transition: color 0.3s ease-in 0.2s;
+}
+.text:hover{
+          transform: skew(10deg);
+
+}
+form .text{
+    color: rgb(177, 177, 37) !important;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.search{
+color: rgb(211, 26, 26) !important;;
+}
+.search:hover{
+    color: green !important;
+    transition: color 0.3s ease-in 0.2s ;
+    -webkit-transition: color 0.3s ease-in 0.2s ;
+    -moz-transition: color 0.3s ease-in 0.2s ;
+    -ms-transition: color 0.3s ease-in 0.2s ;
+    -o-transition: color 0.3s ease-in 0.2s ;
+}
+.shop{
+    color:rgb(211, 26, 26) !important;
+}
+.line{
+    width: 3px;
+   background-color: black !important;
+    height: 50px;
+    z-index: 2234;
+
+}
+header{
+    margin-top: 70px;
+    max-height: 100vh;
+}
+
+
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+.bttn{
+    background-color: rgb(168, 166, 30) !important ;
+}

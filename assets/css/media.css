@@ -1,0 +1,11 @@
+@media screen and (max-width:470px){
+    header{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:992px){
+   .line{
+        display: none;
+    }
+   
+}
