@@ -21,7 +21,7 @@
     grid-template-columns: 1fr 1fr;
    }
 }
-/* تصغير حجم الخط عند الشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .title {
     font-size: 40px;
