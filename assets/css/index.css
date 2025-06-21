@@ -16,6 +16,7 @@ nav{
 .icon{
     color: rgb(182, 123, 84) !important;
     font-size: 40px;
+      cursor: pointer;
     
 }
 .text:hover{
@@ -68,11 +69,11 @@ header{
 
 
 .img{
-    height: 100vh;
+    height:auto;
     width: 100%;
-    object-fit: cover; 
-    animation:  slow-rotate 10s infinite linear ;
-    -webkit-animation:  slow-rotate 10s infinite linear ;
+    object-fit:cover;
+    animation:slow-rotate 10s infinite linear ;
+    -webkit-animation:slow-rotate 10s infinite linear ;
     transform-origin: center center;
     -webkit-transform:;
     -moz-transform:;
@@ -84,8 +85,9 @@ header{
   100% { transform: rotate(6deg); -webkit-transform: rotate(6deg); -moz-transform: rotate(6deg); -ms-transform: rotate(6deg); -o-transform: rotate(6deg);
 }
 } 
-.bttn{
-    background-color: rgb(168, 166, 30) !important ;
+.btnn{
+    background-color:  rgb(182, 123, 84) !important;
+    margin-right:10px;
 }
 .photo{
    
@@ -198,4 +200,19 @@ div .bttn{
 .link:hover{
 color: rgb(197, 124, 29) !important;
 }
+.headheels{
 
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+
+}
+
+.all{
+margin-top: 150px;
+
+}
+.m-btn:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
