@@ -216,3 +216,13 @@ margin-top: 150px;
     font-weight: bolder;
     font-style: italic;
 }
+.cart-container {
+    position: relative;
+}
+#cart-count{
+    position: absolute;
+    top: 8px;
+    left:24px;
+  color: #fff;
+
+}

@@ -8,4 +8,15 @@ search.parentNode.replaceChild(input,search);
   input().focus
 
 })
-//its nessery to complete it [hidden input box and make a search]
+
+let cartcount = Number(localStorage.getItem('cartcount')) || 0;
+document.getElementById('cart-count').innerText = cartcount;
+const buy = document.querySelectorAll('.buy');
+buy.forEach(function (button) {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    cartcount++;
+    localStorage.setItem('cartcount', cartcount);
+    document.getElementById('cart-count').innerText = cartcount;
+  });
+});
