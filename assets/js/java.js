@@ -1,22 +1,42 @@
-const search=document.getElementById('search')
-search.addEventListener('click',()=>{
-  const input=document.createElement('input')
-  input.type='text'
-  input.placeholder='search for'
-  input.className='search-inp'
-search.parentNode.replaceChild(input,search);
-  input().focus
+document.addEventListener( "DOMContentLoaded",()=>{
+const cartcount=document.getElementById('cart-count')
+const addtocart=document.querySelectorAll('.btncollection')
+let cart=JSON.parse(localStorage.getItem('cart')) ||[]
+function saveitem()
+{
+  localStorage.setItem('cart',JSON.stringify(cart))
+}
+function updatingcount (){
+let totalcount=0
+for(let i=0;i<cart.length;i++){
+  totalcount+=cart[i].quantity
+  cartcount.innerText=totalcount
+}
 
+}
+
+addtocart.forEach(btn => {
+    btn.addEventListener('click', e =>{
+    e.preventDefault()
+     const cardBody = btn.closest('.card-body');
+    if (!cardBody) return;
+ const name=cardBody.querySelector('.card-title')?.innerText.trim()
+ const pricetext=cardBody.querySelector('.card-text')?.innerText.trim() ||'';
+ const price=parseInt(pricetext)||0
+ const imgsrc=cardBody.parentElement.getElementsByClassName('imgcollection')||'';
+ if(!name||!price||!imgsrc){
+  alert('Item Cannot Found')
+  return
+ }
+const existitem=cart.find(item => item.name===name)
+if(existitem)
+  existitem.quantity++
+else
+cart.push({name,price,quantity:1,img:imgsrc})
+updatingcount();
+saveitem()
 })
-
-let cartcount = Number(localStorage.getItem('cartcount')) || 0;
-document.getElementById('cart-count').innerText = cartcount;
-const buy = document.querySelectorAll('.buy');
-buy.forEach(function (button) {
-  button.addEventListener('click', function (e) {
-    e.preventDefault();
-    cartcount++;
-    localStorage.setItem('cartcount', cartcount);
-    document.getElementById('cart-count').innerText = cartcount;
-  });
 });
+updatingcount();
+saveitem()
+})
