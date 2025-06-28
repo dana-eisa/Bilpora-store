@@ -10,8 +10,11 @@
         if (cart.length === 0) {
           cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
           totalPriceEl.textContent = '';
+          
           return;
         }
+                
+        
      
         let totalPrice = 0;
 
@@ -46,22 +49,50 @@
           `;
 
           cartItemsDiv.appendChild(card);
+    
         });
 
         totalPriceEl.textContent = `Total Price: ${totalPrice} NIS`;
+        
+              if (cart.length > 0) {
+                    const checkdiv=document.createElement('div')
+                    const button=document.createElement('button')
+                     button.className="btn btn-primary fst-italic fs-3  hover-effect"
+                     button.innerText="checkout"
+                      checkdiv.appendChild(button)
+                     cartItemsDiv.appendChild(checkdiv)
+                       checkdiv.className=('text-center ')
+                       button.onclick = function() {
+                      location.href = "checkout.html"; 
+}
+
+                }
       }
 
       function saveCart() {
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCartCount();
       }
-     function removecart(index) {
- 
-       cart.splice(index, 1);
-         localStorage.setItem('cart', JSON.stringify(cart));
-       renderCart(); 
-    }
 
+
+function removecart(index) {
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+      Swal.fire("Deleted!", "Item has been removed from your cart.", "success");
+    }
+  });
+}
 
    
 function updateCartCount(){
@@ -107,4 +138,6 @@ for ( let i = 0;i<cart.length;i++){
 
       renderCart();
 updateCartCount()
+
     });
+
