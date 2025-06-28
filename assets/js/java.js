@@ -23,7 +23,8 @@ addtocart.forEach(btn => {
  const name=cardBody.querySelector('.card-title')?.innerText.trim()
  const pricetext=cardBody.querySelector('.card-text')?.innerText.trim() ||'';
  const price=parseInt(pricetext)||0
- const imgsrc=cardBody.parentElement.getElementsByClassName('imgcollection')||'';
+ const imgElement=btn.closest('.card').querySelector('.imgcollection')
+ const imgsrc = imgElement ? imgElement.src : '';
  if(!name||!price||!imgsrc){
   alert('Item Cannot Found')
   return

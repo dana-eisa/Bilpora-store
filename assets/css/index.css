@@ -139,9 +139,9 @@ background-color: chocolate !important;
 color:  white !important;
 font-size: 20px;
 }
-.card-body{
+.cardheader{
     animation:  slow-rotate 3s infinite linear ;
-    -webkit-animation:  slow-rotate 3s infinite linear ;
+    -webkit-animation:;
 }
 @keyframes slow-rotate {
   0%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
@@ -237,5 +237,14 @@ margin-top: 150px;
     font-size: 30px;
 }
 .bags{
-      background: linear-gradient( #d48e8c, #fff0f6);
+      background: linear-gradient( #e0b8b7, #fff0f6);
 }
+ .cart {
+     padding: 20px; 
+    }
+    
+.cart-item img
+ {  max-width: 100px; }
+
+ .quantity-controls button {
+     min-width: 30px; }
