@@ -37,7 +37,48 @@ cart.push({name,price,quantity:1,img:imgsrc})
 updatingcount();
 saveitem()
 })
-});
+ });
 updatingcount();
 saveitem()
-})
+   
+
+} )
+window.addEventListener('load', function () {
+  setTimeout(() => {
+    let loading1 = document.getElementById('loading');
+    if (loading1) {
+      loading1.style.display = 'none';
+      let content = document.getElementById('main-content');
+      if (content) content.style.display = 'block';
+    }
+  }, 500);
+
+
+
+});
+
+  const toggler = document.querySelector('.navbar-toggler');
+  const collapse = document.getElementById('navbarSupportedContent');
+  const notifIcon = document.getElementById('notifBell');
+  const cartIcon = document.getElementById('cart-icon');
+
+  toggler.addEventListener('click', () => {
+    const isShown = collapse.classList.contains('show');
+
+    if (!isShown) {
+
+      notifIcon.style.display = 'none';
+      cartIcon.style.display = 'none';
+    } else {
+    
+      notifIcon.style.display = 'inline-block';
+      cartIcon.style.display = 'inline-block';
+    }
+  });
+  collapse.addEventListener('hidden.bs.collapse', () => {
+    notifIcon.style.display = 'inline-block';
+    cartIcon.style.display = 'inline-block';
+  });
+
+
+

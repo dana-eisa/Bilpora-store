@@ -1,12 +1,166 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bilpora BY Dana</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+         <link rel="stylesheet" href="assets/css/media.css">
+         <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+
 </head>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
-</body>
-</html>
+
+<nav class="navbar navbar-expand-lg bg navcolor fixed-top">
+  <div class="container-fluid m-1">
+
+  <a href="index.html"><i class="bi bi-bag-fill icon"></i></a> 
+
+    <button class="navbar-toggler ms-auto btnn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span><!--menue icon-->
+    </button>
+    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+     
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item mx-2">
+          <a class="nav-link active text" aria-current="page" href="Heels.html" target="_self">Heels</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-danger text" href="Boots.html" target="_self">Boots</a>
+        </li>
+        <li class="nav-item mx-2 ">
+         <a class="nav-link text-danger text" href="slipper.html" target="_self">slipper</a>
+         
+        
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-danger text" href="Bags.html" target="_self">Bags</a>
+        </li>
+      </ul>
+
+      <form class="d-flex search" role="search" id="search">
+        <span class="me-1 fs-2 " id="notif"> Notification </span>
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> -->
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+      <div class="line ms-3 me-3"></div>
+    </div> 
+ <i class="fa-solid fa-bell fs-4 fs-1 text-danger" id="notifBell"></i>  
+     <div class="cart-container "  id="cart-icon">
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping shop ms-3 fs-2"></i> </a> 
+          <span id="cart-count">0</span>   
+          </div>    
+  </div>
+</nav>
+<body class=" outlit">
+  <section>
+  <div id="loading">
+    <img src="assets/css/img/logo.jpeg" alt="Loading Image" class="loading-image" />
+    <p>Loading</p>
+  </div>
+</section>
+<div id="main-content" style="display: none;">
+  <section class="container">
+<div class="row g-4 mt-5 text-center">
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card card-body h-100">
+        <img src="assets/css/img/SALE4.PNG" class="card-img-top imgcollection item" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dark Brown</h5>
+          <p class="card-text"><ins><strong>150 NIS </strong><sub><del>200 NIS</del></sub></ins></p>
+          <a href="cart.html" class="btn bg-primary  btncollection buy ">Add to cart</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-lg-3 col-md-6 col-12">
+      <div class="card card-body h-100">
+        <img src="assets/css/img/SALE3.PNG" class="card-img-top imgcollection item" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dark Brown</h5>
+          <p class="card-text"><ins><strong>200 NIS </strong><sub><del>300 NIS</del></sub></ins></p>
+          <a href="cart.html" class="btn bg-primary  btncollection buy ">Add to cart</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-lg-3 col-md-6 col-12">
+      <div class="card card-body h-100">
+        <img src="assets/css/img/SALE1.PNG" class="card-img-top imgcollection item" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dark Brown</h5>
+          <p class="card-text"><ins><strong>200 NIS </strong><sub><del>250 NIS</del></sub></ins></p>
+          <a href="cart.html" class="btn bg-primary  btncollection buy ">Add to cart</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-lg-3 col-md-6 col-12">
+      <div class="card card-body h-100">
+        <img src="assets/css/img/SALE2.PNG" class="card-img-top imgcollection item" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dark Brown</h5>
+          <p class="card-text"><ins><strong>180 NIS </strong><sub><del>250 NIS</del></sub></ins></p>
+          <a href="cart.html" class="btn bg-primary  btncollection buy ">Add to cart</a>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="assets/js/java.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/cart.js"></script>
+ 
+  </body>
+
+    <footer class=" footer p-5">
+<div class="container">
+<div class="">
+  <h1 class="text-center fs-1">Sign-up for Bilpora Newsletter</h1>
+  <p class="text-center pt-2">Stay informed about the latest collection drop</p>
+  <div class="row mt-5">
+<div class="col-lg-7 col-md-7">
+  <div class="text-center"><input type="email" placeholder="Email-addres" class="text-light "></div> 
+    </div>
+             <div class="col-lg-3 col-md-7">     
+         <button class="btn bg-white bttn">join</button></div>
+  </div>
+</div>
+<div class="row ">
+<div class="col-lg-3 mt-5 ">
+  <div class="d-flex flex-column">
+    <h2>Shop</h2>
+  <a href="#Boots" class="text-white mt-2 text-decoration-none fs-5 link"  target="_blank">Heels </a>
+  <a  href="#Boots" class="text-white mt-2 text-decoration-none	fs-5 link" target="_blank">Boots</a>
+  <a  href="#Slipper" class="text-white mt-2 text-decoration-none	fs-5 link" target="_blank">Slipper</a>
+  <a href="#Bags" class="text-white mt-2 text-decoration-none	fs-5 link" target="_blank">Bags</a>
+  </div>
+  </div>
+  <div class="col-lg-3 mt-5">
+  <div class="d-flex flex-column">
+    <h2>contact us</h2>
+ <p>BilporaByDana@gmail.com</p>
+ <p> <i class="fa-solid fa-phone"></i> 0597834564</p>
+  </div>
+  </div>
+  <div class="col-lg-3 mt-5">
+    <div class="d-flex flex-column">
+    <h2>Folow us</h2>
+  <a href="" target="_blank" class="text-white mt-2 text-decoration-none fs-3 link"><i class="fa-brands fa-instagram"></i></a>
+<h3 class="mt-5">Payment accepted</h3>
+<div class="mt-2">
+<i class="fa-brands fa-cc-visa fs-3 mx-2"></i>
+<i class="fa-brands fa-cc-mastercard fs-3 mx-2"></i>
+<i class="fa-brands fa-amazon-pay fs-3 mx-2"></i>
+<i class="fa-brands fa-cc-discover fs-3 mx-2"></i>
+  </div>
+</div>
+</div>
+</div>
+<div class=" bg-dark text-center fs-4 h-100 mt-5 divfooter ">
+  <p>&copy; 2025 BilporaByDana</p>
+  <p>All right is reserved</p>
+</div>
+</footer>

@@ -287,3 +287,28 @@ margin-top: 150px;
   height: auto;
   max-width: 100%;
 }
+#loading {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loading p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary2);
+}
+
+.loading-image {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+.outlit{
+margin-top:200px;
+}

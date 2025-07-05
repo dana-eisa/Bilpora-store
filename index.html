@@ -12,6 +12,7 @@
          <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
 
 </head>
+
 <nav class="navbar navbar-expand-lg bg navcolor fixed-top">
   <div class="container-fluid m-1">
 
@@ -40,21 +41,27 @@
       </ul>
 
       <form class="d-flex search" role="search" id="search">
-        <span class="me-1 fs-2 "> search </span>
+        <span class="me-1 fs-2 " id="notif"> Notification </span>
         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> -->
         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
       </form>
       <div class="line ms-3 me-3"></div>
     </div> 
-     <i class="fa-brands fa-searchengin fs-2 search"></i>  
-     <div class="cart-container ">
+ <i class="fa-solid fa-bell fs-4 fs-1 text-danger" id="notifBell"></i>  
+     <div class="cart-container "  id="cart-icon">
           <a href="cart.html"><i class="fa-solid fa-bag-shopping shop ms-3 fs-2"></i> </a> 
           <span id="cart-count">0</span>   
           </div>    
   </div>
 </nav>
-
 <body>
+  <section>
+  <div id="loading">
+    <img src="assets/css/img/logo.jpeg" alt="Loading Image" class="loading-image" />
+    <p>Loading...</p>
+  </div>
+</section>
+<div id="main-content" style="display: none;">
   <header class="index">
 <img src="assets/css/img/bg1.PNG" alt="" class="img">
 </header>
@@ -156,6 +163,7 @@
 </section>
 
 </main>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 <script src="assets/js/java.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -163,16 +171,16 @@
 
 </body>
 
-<footer class=" footer p-5">
+<footer class=" footer p-5 overflow-hidden">
 <div class="container">
 <div>
   <h1 class="text-center fs-1">Sign-up for Bilpora Newsletter</h1>
   <p class="text-center pt-2">Stay informed about the latest collection drop</p>
-  <div class="text-center"><input type="email" placeholder="Email-addres" class="text-light mt-5 col-md-3 ">
+  <div class="text-center"><input type="email" placeholder="Email-addres" class="text-light mt-5 ">
                              <button class="btn bg-white bttn">join</button></div>
 </div>
-<div class="row">
-<div class="col-lg-3 mt-5">
+<div class="row ">
+<div class="col-lg-3 mt-5 ">
   <div class="d-flex flex-column">
     <h2>Shop</h2>
   <a href="#Boots" class="text-white mt-2 text-decoration-none fs-5 link"  target="_blank">Heels </a>
@@ -207,4 +215,5 @@
   <p>All right is reserved</p>
 </div>
 </footer>
+</div>
 </html>

@@ -27,26 +27,26 @@
 
           card.innerHTML = `
             <div class="row align-items-center">
-              <div class="col-3">
-                <img src="${item.img}" alt="${item.name}" class="img-fluid"/>
-              </div>
-              <div class="col-3">
-                <h5>${item.name}</h5>
-                <p>Price: ${item.price} NIS</p>
-              </div>
-              <div class="col-2 quantity-controls">
-                <button class="btn btn-secondary btn-sm decrease" data-index="${index}">-</button>
-                <span class="mx-2">${item.quantity}</span>
-                <button class="btn btn-secondary btn-sm increase" data-index="${index}">+</button>
-              </div>
-              <div class="col-2">
-                <strong>Total: ${itemTotal} NIS</strong>
-              </div>
-               <div class="col-2">
-                <button class="btn btn-primary m-4 remove-btn">remove</button>
-              </div>
-            </div>
-          `;
+  <div class="col-3">
+    <img src="${item.img}" alt="${item.name}" class="img-fluid"/>
+   </div>
+  <div class="col-3">
+    <h5>${item.name}</h5>
+     <p>Price: ${item.price} NIS</p>
+   </div>
+   <div class="col-2 quantity-controls">
+     <button class="btn btn-secondary btn-sm decrease" data-index="${index}">-</button>
+     <span class="mx-2">${item.quantity}</span>
+    <button class="btn btn-secondary btn-sm increase" data-index="${index}">+</button>
+   </div>
+  <div class="col-2">
+     <strong>Total: ${itemTotal} NIS</strong>
+  </div>
+    <div class="col-2">
+    <button class="btn btn-primary m-4 remove-btn">remove</button> 
+  </div>
+  </div>
+  `;
 
           cartItemsDiv.appendChild(card);
     

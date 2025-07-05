@@ -16,6 +16,7 @@
    .line{
         display: none;
     }
+   
    .grid-display{
   
     grid-template-columns: 1fr 1fr;
